@@ -1,4 +1,4 @@
-# Cluster Toolkit for Synopsys run and details**
+# Cluster Toolkit for Synopsys run and details
 
 The page has a sample blueprint synopsys-blueprint.yaml which is design for EDA. It includes the following components: 
 
@@ -26,7 +26,7 @@ Download all these files from Synopsys SolvNetPlus Website:
 ```
 SynopsysInstaller_v5.9.run
 ```
-- Synopsys Common Licensing (SCL) binary
+- Synopsys Common Licensing (SCL) binary:
 ```
 scl_v2025.03-SP2_common.spf
 scl_v2025.03-SP2_linux64.spf
