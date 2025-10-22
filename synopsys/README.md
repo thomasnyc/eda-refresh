@@ -59,9 +59,10 @@ chmod 755 SynopsysInstaller_v5.9.run
 Prompt will ask site ID, location of the spf files and installation location
 It will find all spf files and install everything 
 
-## License:
 
 ## License:
+
+SSH to the licensne server:
 
 Please make the Installer and Synopsys Common Licensing (SCL) binary available in the license server. Run the installer application at finish: one will see this message: 
 
