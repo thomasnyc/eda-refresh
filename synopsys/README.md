@@ -61,10 +61,46 @@ It will find all spf files and install everything
 
 ## License:
 
+## License:
+
 Please make the Installer and Synopsys Common Licensing (SCL) binary available in the license server. Run the installer application at finish: one will see this message: 
 
 Synopsys tools require that a supported version of Synopsys Common
 Licensing (SCL) be installed and serving the necessary licenses.
+
+There are couple pre-requisites and steps needed to activate the license server: 
+
+```
+sudo yum install -y fuse tcsh
+```
+
+use tcsh instead of bash and change to the binary location:
+```
+tcsh
+cd /usr/synopsys/scl/2025.03-SP2/linux64/bin
+```
+
+As root: Run the following command:
+```
+./install_fnp.sh --cert
+```
+Output: 
+Starting FNPLicensingService daemon as user thxxxxx
+Licensing Service daemon activated
+
+Checking FNPLicensingService is running
+Configuration completed successfully.
+
+Then running the lmhostid command to obtain the lmhostid for license file generation:
+```
+lmhostid -ptype VM -uuid
+```
+
+Output: 
+lmhostid - Copyright (c) 1989-2024 Flexera. All Rights Reserved.
+The FlexNet host ID of this machine is "VM_UUID=1xxxxxxxxxxxxxxxxxxxx"
+
+This UUID needs to be given to Synopsys for license file generation. 
 
 ### Applying license file:
 
