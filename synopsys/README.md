@@ -72,10 +72,10 @@ WIP
 
 ## Sample hspice job:
 
-User can submit the job by leveaging the hspice.job file in this repo: 
+User can submit the job by leveaging the hspice-sample.job file in this repo: 
 
 Submit the job: 
 
 ```batch
-sbatch hspice.job
+sbatch hspice-sample.job
 ```
