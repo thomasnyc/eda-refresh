@@ -48,8 +48,12 @@ vcs_vW-2024.09-SP2-5_linux64.spf.part02
 ## Installation of Synopsys software:
 
 ```
-cd /apps
-mkdir synopsys
+sudo yum install -y tcsh
+sudo mkdir /apps/synopsys
+sudo chmod 777 /apps/synopsys
+sudo mkdir /apps/synopsys-source
+sudo chmod 777 /apps/synopsys-source
+cd /apps/synopsys-source
 gcloud storage cp gs://thomashk-synopsys-software/* .
 chmod 755 SynopsysInstaller_v5.9.run
 ./SynopsysInstaller_v5.9.run
